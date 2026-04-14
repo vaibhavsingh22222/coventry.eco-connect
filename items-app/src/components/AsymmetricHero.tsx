@@ -50,11 +50,11 @@ export const AsymmetricHero: React.FC = () => {
 
           {/* Right Side: Visual Element */}
           <div className="relative">
-            {/*  CHANGE: reduced blur for performance */}
+            {/* CHANGE: reduced blur for performance */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-green-50 rounded-full blur-2xl -z-10" />
             
             {/* Decorative "Mock" UI Card */}
-            {/*  CHANGE: smoother hover */}
+            {/* CHANGE: smoother hover */}
             <div className="relative bg-white p-4 rounded-3xl shadow-2xl border border-slate-100 rotate-2 hover:rotate-0 transition-all duration-500">
                
                <div className="bg-slate-900 rounded-2xl overflow-hidden p-1 shadow-inner">
@@ -82,11 +82,11 @@ export const AsymmetricHero: React.FC = () => {
                   </div>
                </div>
                
-               {/*  CHANGE: smoother animation (less aggressive than bounce) */}
+               {/* CHANGE: smoother animation (less aggressive than bounce) */}
                <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-50 animate-pulse">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold">
-                      ✓
+                      
                     </div>
                     <div>
                       <p className="text-xs text-slate-400 font-bold uppercase">Status</p>

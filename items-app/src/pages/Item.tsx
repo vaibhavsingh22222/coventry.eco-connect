@@ -7,7 +7,7 @@ export default function Item() {
     <div className="max-w-3xl mx-auto py-16 text-center">
       
       <h1 className="text-4xl font-extrabold text-slate-900 mb-6">
-        Eco Item Details 🌿
+        Eco Item Details 
       </h1>
 
       <div className="bg-white border border-slate-100 shadow-sm rounded-2xl p-8">

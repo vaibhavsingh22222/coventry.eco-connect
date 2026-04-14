@@ -6,25 +6,36 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Items from "./pages/Items";
 import Item from "./pages/Item";
+import Businesses from "./pages/Businesses";
+import Reviews from "./pages/Reviews";
 
 function App() {
   return (
     <BrowserRouter>
-      
-      {/* HEADER (persistent) */}
-      <Header />
 
-      {/* MAIN CONTENT AREA */}
-      <main className="min-h-screen bg-slate-50">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/items" element={<Items />} />
-          <Route path="/items/:id" element={<Item />} />
-        </Routes>
-      </main>
+      <div className="flex flex-col min-h-screen">
 
-      {/* FOOTER (persistent) */}
-      <Footer />
+        {/* HEADER */}
+        <Header />
+
+        {/* MAIN CONTENT */}
+        <main className="flex-1 bg-slate-50 p-6">
+          <Routes>
+
+            <Route path="/" element={<Home />} />
+            <Route path="/items" element={<Items />} />
+            <Route path="/items/:id" element={<Item />} />
+
+            <Route path="/businesses" element={<Businesses />} />
+            <Route path="/reviews" element={<Reviews />} />
+
+          </Routes>
+        </main>
+
+        {/* FOOTER */}
+        <Footer />
+
+      </div>
 
     </BrowserRouter>
   );

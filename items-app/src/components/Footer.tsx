@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container } from './Layout';
+import React from "react";
+import { Container } from "./Layout";
 
 export const Footer: React.FC = () => {
   return (
@@ -18,21 +18,26 @@ export const Footer: React.FC = () => {
             </p>
           </div>
 
-          {/* LINKS */}
-          {['Learn', 'Platform', 'Community'].map((section) => (
+          {/* SECTIONS */}
+          {["Learn", "Platform", "Community"].map((section) => (
             <div key={section}>
-              <h4 className="text-slate-900 font-bold mb-4">{section}</h4>
+              <h4 className="text-slate-900 font-bold mb-4">
+                {section}
+              </h4>
+
               <ul className="space-y-3 text-sm">
                 <li>
                   <a href="#" className="hover:text-green-600 transition-colors">
                     Eco Businesses
                   </a>
                 </li>
+
                 <li>
                   <a href="#" className="hover:text-green-600 transition-colors">
                     Sustainability Tips
                   </a>
                 </li>
+
                 <li>
                   <a href="#" className="hover:text-green-600 transition-colors">
                     Resources

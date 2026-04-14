@@ -21,12 +21,12 @@ export const Card: React.FC<CardProps> = ({
     overflow-hidden ${className}
   `}>
     
-    {/*  FIX: better accessibility (fallback alt text) */}
+    {/* ❗ FIX: better accessibility (fallback alt text) */}
     {image && (
       <div className="overflow-hidden">
         <img 
           src={image} 
-          alt={title || "Card image"}  //  FIX
+          alt={title || "Card image"}  // ❗ FIX
           className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
         />
       </div>
@@ -34,21 +34,21 @@ export const Card: React.FC<CardProps> = ({
 
     <div className="p-8">
       
-      {/*  CHANGE: better semantic heading */}
+      {/* ❗ CHANGE: better semantic heading */}
       {title && (
         <h3 className="text-2xl font-bold text-green-800 mb-3">
           {title}
         </h3>
       )}
 
-      {/*  FIX: spacing consistency */}
+      {/* ❗ FIX: spacing consistency */}
       {description && (
         <p className="text-slate-500 leading-relaxed mb-6">
           {description}
         </p>
       )}
 
-      {/*  FIX: prevent empty spacing if no children */}
+      {/* ❗ FIX: prevent empty spacing if no children */}
       {children && <div>{children}</div>}
       
     </div>

@@ -12,7 +12,7 @@ export default function Items() {
     <div className="max-w-5xl mx-auto py-16">
       
       <h1 className="text-4xl font-extrabold text-slate-900 mb-10 text-center">
-        Eco Items Collection 🌿
+        Eco Items Collection 
       </h1>
 
       <div className="grid md:grid-cols-3 gap-6">

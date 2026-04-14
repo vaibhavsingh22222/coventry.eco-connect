@@ -11,11 +11,7 @@ interface HeadingProps extends TypographyProps {
   level?: HeadingLevel;
 }
 
-export const Heading: React.FC<HeadingProps> = ({ 
-  level = 1, 
-  children, 
-  className = "" 
-}) => {
+export const Heading: React.FC<HeadingProps> = ({ level = 1, children, className = "" }) => {
   const styles: Record<HeadingLevel, string> = {
     1: "text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900",
     2: "text-3xl font-bold text-slate-800",
@@ -23,18 +19,10 @@ export const Heading: React.FC<HeadingProps> = ({
   };
   
   const Tag = `h${level}` as keyof JSX.IntrinsicElements;
-
-  return (
-    <Tag className={`${styles[level]} ${className}`}>
-      {children}
-    </Tag>
-  );
+  return <Tag className={`${styles[level]} ${className}`}>{children}</Tag>;
 };
 
-export const Text: React.FC<TypographyProps> = ({ 
-  children, 
-  className = "" 
-}) => (
+export const Text: React.FC<TypographyProps> = ({ children, className = "" }) => (
   <p className={`text-slate-600 leading-relaxed text-lg ${className}`}>
     {children}
   </p>

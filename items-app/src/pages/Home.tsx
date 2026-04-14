@@ -3,7 +3,7 @@ export default function Home() {
     <div className="max-w-4xl mx-auto text-center py-16">
       
       <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
-        Welcome to EcoConnect 🌿
+        Welcome to EcoConnect 
       </h1>
 
       <p className="text-lg text-slate-600 leading-relaxed mb-10">
