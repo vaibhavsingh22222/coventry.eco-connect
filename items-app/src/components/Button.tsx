@@ -1,6 +1,6 @@
 import React, { type ReactNode } from 'react';
 
-export type ButtonVariant = 'success' | 'info' | 'danger' | 'alert';
+export type ButtonVariant = 'success' | 'info' | 'danger' | 'alert' | 'eco';
 
 interface ButtonProps {
   variant?: ButtonVariant;
@@ -10,7 +10,7 @@ interface ButtonProps {
 }
 
 export const Button: React.FC<ButtonProps> = ({ 
-  variant = "info", 
+  variant = "eco", 
   children, 
   onClick, 
   className = "" 
@@ -20,6 +20,8 @@ export const Button: React.FC<ButtonProps> = ({
     info: "bg-indigo-600 hover:bg-indigo-700 shadow-indigo-100 ring-indigo-500/20",
     danger: "bg-rose-500 hover:bg-rose-600 shadow-rose-100 ring-rose-500/20",
     alert: "bg-amber-500 hover:bg-amber-600 shadow-amber-100 ring-amber-500/20",
+    // CHANGED: added new 'eco' variant for EcoConnect green branding
+    eco: "bg-green-600 hover:bg-green-700 shadow-green-100 ring-green-500/20",
   };
 
   return (
