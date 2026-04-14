@@ -11,10 +11,10 @@ function App() {
   return (
     <BrowserRouter>
       
-      {/* HEADER */}
+      {/* HEADER (persistent) */}
       <Header />
 
-      {/* MAIN CONTENT */}
+      {/* MAIN CONTENT AREA */}
       <main className="min-h-screen bg-slate-50">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,7 +23,7 @@ function App() {
         </Routes>
       </main>
 
-      {/* FOOTER */}
+      {/* FOOTER (persistent) */}
       <Footer />
 
     </BrowserRouter>
