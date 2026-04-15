@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import Items from "./pages/Items";
 import Item from "./pages/Item";
 import Businesses from "./pages/Businesses";
-import Reviews from "./pages/Reviews";
+import Reviews from "./pages/reviews";
 
 function App() {
   return (

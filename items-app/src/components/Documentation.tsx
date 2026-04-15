@@ -4,8 +4,7 @@ import React from 'react';
 import { Heading, Text } from './Typography';
 import { Button } from './Button';
 import { Card } from './Card';
-import { Container, Section } from './Layout';
-import { Navbar } from './Navbar';
+import Navbar from './Navbar';
 import { Footer } from './Footer';
 import { CenteredHero } from './CenteredHero';
 import { AsymmetricHero } from './AsymmetricHero';
@@ -88,7 +87,7 @@ export const DocumentationPortal: React.FC = () => {
   return (
     <div className="min-h-screen bg-white pb-20 selection:bg-green-100">
       
-      <Container className="mt-20">
+      <div className="mt-20">
         <header className="mb-24">
           <Heading level={1} className="mb-6 tracking-tighter">
             UI Library Documentation
@@ -193,11 +192,10 @@ export const DocumentationPortal: React.FC = () => {
           <Footer />
         </DocSection>
 
-      </Container>
+      </div>
 
       {/* FINAL FOOTER */}
-      <Section bg="bg-slate-900" className="mt-20">
-        <Container>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="text-white font-black text-2xl mb-4">
               CU COVENTRY CLOUD LABS
@@ -206,8 +204,8 @@ export const DocumentationPortal: React.FC = () => {
               EcoConnect UI system for modern sustainable applications.
             </p>
           </div>
-        </Container>
-      </Section>
+        </div>
+      
     </div>
   );
 };

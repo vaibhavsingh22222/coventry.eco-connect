@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from './Layout';
 import { Heading, Text } from './Typography';
 import { Button } from './Button';
 
@@ -7,7 +6,7 @@ export const AsymmetricHero: React.FC = () => {
   return (
     //  CHANGE: added bg color for better section visibility
     <section className="relative py-20 lg:py-32 overflow-hidden bg-white">
-      <Container>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
           {/* Left Side: Content */}
@@ -99,7 +98,7 @@ export const AsymmetricHero: React.FC = () => {
           </div>
 
         </div>
-      </Container>
+  </div>
     </section>
   );
 };

@@ -1,10 +1,9 @@
 import React from "react";
-import { Container } from "./Layout";
 
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-white text-slate-600 border-t border-slate-200 py-16">
-      <Container>
+      <div className="max-w-7xl mx-auto px-4">
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 pb-10">
           
@@ -62,7 +61,7 @@ export const Footer: React.FC = () => {
 
         </div>
 
-      </Container>
+      </div>
     </footer>
   );
 };
